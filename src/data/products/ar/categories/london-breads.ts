@@ -1,3 +1,5 @@
 import type { CategoryLocaleOverride } from "../../types";
 
-export const londonBreadsCategoryAr: CategoryLocaleOverride = {};
+export const londonBreadsCategoryAr: CategoryLocaleOverride = {
+  name: "خبز لندن",
+};
