@@ -3,6 +3,7 @@ import type { ProductsPageContent } from "../types";
 export const productsContent: ProductsPageContent = {
   listing: {
     heroAlt: "Premium bread products",
+    heroImage: "/assets/images/product-banner.webp",
     fancyTitle: "What do you fancy today?",
     fancyDescription:
       "Browse through our collection of baked goods with various categories that suit your taste preferences. Each category has been carefully curated to give you the best experience.",

@@ -240,6 +240,7 @@ export interface OurStoriesContent {
 export interface ProductsPageContent {
   listing: {
     heroAlt: string;
+    heroImage: string;
     fancyTitle: string;
     fancyDescription: string;
     suggestTitle: string;

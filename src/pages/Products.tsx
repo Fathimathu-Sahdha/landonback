@@ -97,9 +97,11 @@ const Products = () => {
       {/* Hero Image Section */}
       <section className="relative w-full">
         <img
-          src="/assets/images/product-banner.webp"
+          src={content.heroImage}
           alt={content.heroAlt}
-          className="w-full h-64 md:h-[25rem] lg:h-[33rem] object-cover"
+          loading="eager"
+          fetchPriority="high"
+          className="w-full h-64 md:h-[25rem] lg:h-[33rem] object-cover object-center"
         />
 
         {/* Bottom Curved SVG */}
