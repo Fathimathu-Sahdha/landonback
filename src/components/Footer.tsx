@@ -24,7 +24,11 @@ const Footer = () => {
             {/* Left Column - Branding & Social */}
             <div className="lg:col-span-1 text-center md:text-left">
               <div className="text-2xl font-bold mb-6 tracking-wider flex justify-center md:justify-start">
-                <img src="/assets/logo/logo_footer.webp" alt={content.logoAlt} className="h-[7rem] w-[11rem]" />
+                <img
+                  src={content.logoImage}
+                  alt={content.logoAlt}
+                  className="h-[7rem] w-[11rem] object-contain"
+                />
               </div>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a href="https://www.facebook.com/londonbakery.qa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors text-gray-600">

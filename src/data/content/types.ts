@@ -75,6 +75,7 @@ export interface HomePageContent {
 
 export interface FooterContent {
   logoAlt: string;
+  logoImage: string;
   contact: {
     title: string;
     phone: string;
@@ -95,6 +96,7 @@ export interface FooterContent {
 export interface LayoutContent {
   header: {
     logoAlt: string;
+    logoImage: string;
     nav: Array<{
       name: string;
       href: string;

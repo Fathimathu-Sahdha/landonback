@@ -5,6 +5,8 @@ import type { LayoutContent } from "../types";
 // See en/layout.ts for the English source of truth.
 export const layoutContentAr: DeepPartial<LayoutContent> = {
   header: {
+    logoAlt: "مخبز لندن - مشهد الجودة ١٩٨٦",
+    logoImage: "/assets/logo/logo_header_ar.png",
     nav: [
       { name: "الصفحة الرئيسية", href: "/" },
       { name: "منتجات", href: "/products" },
@@ -19,7 +21,8 @@ export const layoutContentAr: DeepPartial<LayoutContent> = {
     ],
   },
   footer: {
-    logoAlt: "London Bakery Logo",
+    logoAlt: "مخبز لندن - مشهد الجودة ١٩٨٦",
+    logoImage: "/assets/logo/logo_header_ar.png",
     contact: {
       title: "اتصل بنا",
       phone: "رقم الهاتف  : +٩٧٤ ٤٤٤٧ ٩٧٨٥ ",
@@ -36,7 +39,7 @@ export const layoutContentAr: DeepPartial<LayoutContent> = {
       ],
     },
     quickLinks: {
-      title: "Quick Links",
+      title: "روابط سريعة",
       links: [
         "الصفحة الرئيسية ",
         "منتجات",

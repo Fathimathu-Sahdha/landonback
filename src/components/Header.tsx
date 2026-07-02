@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-  const { pageContent } = useLanguage();
+  const { pageContent, locale } = useLanguage();
   const { header } = pageContent.layout;
   const navigationItems = header.nav;
 
@@ -81,9 +81,9 @@ const Header = () => {
             className="text-2xl font-bold text-foreground tracking-wider"
           >
             <img
-              src="/assets/logo/logo_header.webp"
+              src={header.logoImage}
               alt={header.logoAlt}
-              className="h-8 w-auto"
+              className={`w-auto object-contain ${locale === "ar" ? "h-10" : "h-8"}`}
             />
           </Link>
         </div>
@@ -117,9 +117,9 @@ const Header = () => {
                 {/* Logo at Top Center of Menu */}
                 <div className="flex justify-center pt-8 pb-4">
                   <img
-                    src="/assets/logo/logo_header.webp"
+                    src={header.logoImage}
                     alt={header.logoAlt}
-                    className="h-8 w-auto"
+                    className={`w-auto object-contain ${locale === "ar" ? "h-10" : "h-8"}`}
                   />
                 </div>
 

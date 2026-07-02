@@ -3,6 +3,7 @@ import type { LayoutContent } from "../types";
 export const layoutContent: LayoutContent = {
   header: {
     logoAlt: "London Bakery Logo",
+    logoImage: "/assets/logo/logo_header.webp",
     nav: [
       { name: "Home", href: "/" },
       { name: "Products", href: "/products" },
@@ -18,6 +19,7 @@ export const layoutContent: LayoutContent = {
   },
   footer: {
     logoAlt: "London Bakery Logo",
+    logoImage: "/assets/logo/logo_footer.webp",
     contact: {
       title: "Contact Us",
       phone: "Phone: +974 4447 9785",
