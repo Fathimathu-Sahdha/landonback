@@ -16,6 +16,7 @@ export interface HomePageContent {
   }>;
   feature: {
     bakedTextAlt: string;
+    bakedTextImage: string;
     imageAlt: string;
     titleLineOne: string;
     titleLineTwo: string;

@@ -35,6 +35,7 @@ export const homeContent: HomePageContent = {
     ],
     feature: {
       bakedTextAlt: "Baked to feed your soul text",
+      bakedTextImage: "/assets/images/baked_text.webp",
       imageAlt: "About Us Image",
       titleLineOne: "Born in Qatar",
       titleLineTwo: "in 1986!",

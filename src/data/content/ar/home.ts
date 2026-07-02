@@ -35,7 +35,8 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
       },
     ],
     feature: {
-      bakedTextAlt: "Baked to feed your soul text",
+      bakedTextAlt: "مخبوزة لتغذية روحك",
+      bakedTextImage: "/assets/images/baked_text_ar.png",
       imageAlt: "About Us Image",
       titleLineOne: "ولد في قطر",
       titleLineTwo: "عام  1986!",

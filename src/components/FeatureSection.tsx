@@ -1,17 +1,17 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const FeatureSection = () => {
-  const { pageContent } = useLanguage();
+  const { pageContent, isRtl } = useLanguage();
   const content = pageContent.home.feature;
 
   return (
     <section className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 pt-8 pb-8 md:pt-16 md:pb-16 px-4 relative">
       {/* Baked text spanning across sections - positioned above the map */}
-      <div className="absolute top-0 left-0 md:left-4 lg:left-8 transform -translate-y-1/2 w-[12rem] h-[5rem] md:w-[20rem] md:h-[10rem] lg:w-[23rem] lg:h-[10rem] z-20">
+      <div className={`absolute top-0 transform -translate-y-1/2 w-[12rem] h-[5rem] md:w-[20rem] md:h-[10rem] lg:w-[23rem] lg:h-[10rem] z-20 ${isRtl ? "right-0 md:right-4 lg:right-8" : "left-0 md:left-4 lg:left-8"}`}>
         <img 
-          src="assets/images/baked_text.webp" 
+          src={content.bakedTextImage}
           alt={content.bakedTextAlt}
-          className="w-full h-full object-contain"
+          className={`w-full h-full object-contain ${isRtl ? "-rotate-6" : ""}`}
         />
       </div>
       
