@@ -1,0 +1,52 @@
+/* Hide Google Translate banner at the top of page */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Prevent body from being pushed down */
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Hide the Google Translate logo and branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  color: #000 !important;
+}
+
+/* Hide "Powered by" text */
+.goog-te-gadget > span {
+  display: none !important;
+}
+
+/* Hide Google Translate balloon/tooltip */
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+#google_translate_element select {
+  display: none !important;
+}
+
+body > .skiptranslate {
+  display: none !important;
+}
+
+iframe.skiptranslate {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* Ensure Google Translate doesn't add extra padding to body */
+body {
+  top: 0px !important;
+}
