@@ -23,7 +23,7 @@ interface Recipe {
 }
 
 const RecipeShowcase = () => {
-  const { pageContent, locale } = useLanguage();
+  const { pageContent, locale, isRtl } = useLanguage();
   const content = pageContent.home.recipes;
   const titleInstructionSeparator = locale === "ar" ? "، " : ", ";
   const instructionStepSeparator = locale === "ar" ? "، " : " ";
@@ -157,7 +157,10 @@ const RecipeShowcase = () => {
         </div>
 
         {/* Desktop 3-4-5 Layout */}
-        <div className="hidden lg:grid lg:grid-cols-12 gap-6 md:gap-8 lg:gap-10 min-h-[600px] items-center">
+        <div
+          dir={isRtl ? "ltr" : undefined}
+          className="hidden lg:grid lg:grid-cols-12 gap-6 md:gap-8 lg:gap-10 min-h-[600px] items-center"
+        >
           {/* Left Side - Recipe Navigation (3 columns) */}
           <div className="lg:col-span-3 flex flex-col h-full justify-center">
             {/* Desktop Navigation */}
@@ -198,7 +201,10 @@ const RecipeShowcase = () => {
           </div>
 
           {/* Right Side - Recipe Details (5 columns) */}
-          <div className="lg:col-span-5 flex flex-col h-full">
+          <div
+            className="lg:col-span-5 flex flex-col h-full"
+            dir={isRtl ? "rtl" : undefined}
+          >
             <div className="flex-grow flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 {activeRecipe.title}
