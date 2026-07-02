@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-  const { pageContent, locale } = useLanguage();
+  const { pageContent } = useLanguage();
   const { header } = pageContent.layout;
   const navigationItems = header.nav;
 
@@ -83,7 +83,7 @@ const Header = () => {
             <img
               src={header.logoImage}
               alt={header.logoAlt}
-              className={`w-auto object-contain ${locale === "ar" ? "h-10" : "h-8"}`}
+              className="h-8 w-auto object-contain"
             />
           </Link>
         </div>
@@ -119,7 +119,7 @@ const Header = () => {
                   <img
                     src={header.logoImage}
                     alt={header.logoAlt}
-                    className={`w-auto object-contain ${locale === "ar" ? "h-10" : "h-8"}`}
+                    className="h-8 w-auto object-contain"
                   />
                 </div>
 
