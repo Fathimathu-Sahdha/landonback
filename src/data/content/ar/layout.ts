@@ -36,9 +36,9 @@ export const layoutContentAr: DeepPartial<LayoutContent> = {
       ],
     },
     quickLinks: {
-      title: "روابط سريعة",
+      title: "Quick Links",
       links: [
-        "الصفحة الرئيسية",
+        "الصفحة الرئيسية ",
         "منتجات",
         "أربعون عاماً من التاريخ",
         "الوظائف",
@@ -48,11 +48,6 @@ export const layoutContentAr: DeepPartial<LayoutContent> = {
       ],
     },
     copyright: "جميع الحقوق محفوظة © 2026",
-    credit: "صُنع بحب من قبل هاشم وبس",
-  },
-  notFound: {
-    title: "٤٠٤",
-    message: "عذراً! الصفحة غير موجودة",
-    backToHome: "العودة إلى الصفحة الرئيسية",
+    credit: " صُنع بحب من قبل هاشم وبس",
   },
 };

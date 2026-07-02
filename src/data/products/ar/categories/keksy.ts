@@ -1,5 +1,3 @@
 import type { CategoryLocaleOverride } from "../../types";
 
-export const keksyCategoryAr: CategoryLocaleOverride = {
-  name: "كيكسي",
-};
+export const keksyCategoryAr: CategoryLocaleOverride = {};

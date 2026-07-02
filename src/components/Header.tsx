@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-  const { pageContent, isRtl } = useLanguage();
+  const { pageContent } = useLanguage();
   const { header } = pageContent.layout;
   const navigationItems = header.nav;
 
@@ -124,12 +124,12 @@ const Header = () => {
                 </div>
 
                 {/* Navigation Menu */}
-                <div className={`flex-1 flex flex-col justify-start items-center px-4 md:px-48 lg:px-80 xl:px-96 pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-28 space-y-4 ${isRtl ? "md:items-end" : "md:items-start"}`}>
+                <div className="flex-1 flex flex-col justify-start items-center md:items-start px-4 md:px-48 lg:px-80 xl:px-96 pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-28 space-y-4">
                   {navigationItems.map((item) => (
                     <div key={item.name}>
                       <button
                         onClick={() => handleNavigation(item)}
-                        className={`text-2xl md:text-3xl font-semibold text-foreground hover:text-primary transition-colors duration-300 ${isRtl ? "text-right" : "text-left"}`}
+                        className="text-2xl md:text-3xl font-semibold text-foreground hover:text-primary transition-colors duration-300 text-left"
                       >
                         {item.name}
                       </button>

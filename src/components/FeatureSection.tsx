@@ -7,7 +7,7 @@ const FeatureSection = () => {
   return (
     <section className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 pt-8 pb-8 md:pt-16 md:pb-16 px-4 relative">
       {/* Baked text spanning across sections - positioned above the map */}
-      <div className="absolute top-0 right-0 md:right-4 lg:right-8 transform -translate-y-1/2 w-[12rem] h-[5rem] md:w-[20rem] md:h-[10rem] lg:w-[23rem] lg:h-[10rem] z-20">
+      <div className="absolute top-0 left-0 md:left-4 lg:left-8 transform -translate-y-1/2 w-[12rem] h-[5rem] md:w-[20rem] md:h-[10rem] lg:w-[23rem] lg:h-[10rem] z-20">
         <img 
           src="assets/images/baked_text.webp" 
           alt={content.bakedTextAlt}
