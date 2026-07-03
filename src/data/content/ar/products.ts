@@ -53,6 +53,11 @@ export const productsContentAr: DeepPartial<ProductsPageContent> = {
     proteins: "البروتينات",
     bannerAlt: "لافتة تفاصيل المنتج",
     notAvailable: "غير متاح",
+    variantLabels: {
+      Small: "صغير",
+      Medium: "واسطة",
+      Large: "كبير",
+    },
   },
   ingredients: {
     categoryNotFound: "الفئة غير موجودة",

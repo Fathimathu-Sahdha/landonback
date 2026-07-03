@@ -45,6 +45,18 @@ const ProductDetail = () => {
 
   const currentData = getCurrentVariantData();
 
+  const getVariantLabel = (variantName: string) =>
+    content.variantLabels[variantName] ?? variantName;
+
+  const formatNutritionValue = (value?: string) => {
+    if (!value || locale !== "ar") return value;
+
+    return value
+      .replace(/(\d+(?:\.\d+)?)\s*kcal\b/gi, "$1 سعر حراري")
+      .replace(/\bkcal\s*(\d+(?:\.\d+)?)/gi, "$1 سعر حراري")
+      .replace(/(\d+(?:\.\d+)?)\s*g\b/gi, "$1 غرام");
+  };
+
   // Determine container height based on content size
   const hasVariants =
     product?.variants && Object.keys(product.variants).length > 0;
@@ -222,7 +234,7 @@ const ProductDetail = () => {
                                 : "bg-white border-2 border-gray-300 text-gray-700 hover:border-orange-500"
                             }`}
                           >
-                            {variantName}
+                            {getVariantLabel(variantName)}
                           </button>
                         ))}
                       </div>
@@ -295,7 +307,7 @@ const ProductDetail = () => {
                       {content.energy}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold text-black mb-1">
-                      {currentData?.nutrition.energy}
+                      {formatNutritionValue(currentData?.nutrition.energy)}
                     </div>
                   </div>
 
@@ -305,7 +317,7 @@ const ProductDetail = () => {
                       {content.fats}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold text-black mb-1">
-                      {currentData?.nutrition.fat}
+                      {formatNutritionValue(currentData?.nutrition.fat)}
                     </div>
                   </div>
 
@@ -315,7 +327,7 @@ const ProductDetail = () => {
                       {content.carbs}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold text-black mb-1">
-                      {currentData?.nutrition.carbohydrate}
+                      {formatNutritionValue(currentData?.nutrition.carbohydrate)}
                     </div>
                   </div>
 
@@ -325,7 +337,8 @@ const ProductDetail = () => {
                       {content.fiber}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold text-black mb-1">
-                      {currentData?.nutrition.fiber || content.notAvailable}
+                      {formatNutritionValue(currentData?.nutrition.fiber) ||
+                        content.notAvailable}
                     </div>
                   </div>
 
@@ -335,7 +348,7 @@ const ProductDetail = () => {
                       {content.proteins}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold mb-1">
-                      {currentData?.nutrition.protein}
+                      {formatNutritionValue(currentData?.nutrition.protein)}
                     </div>
                   </div>
                 </div>

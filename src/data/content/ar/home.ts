@@ -97,7 +97,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "320",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "غرام 8.21",
             protein: "غرام 7.1 ",
@@ -119,7 +119,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "415",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "17.95  غرام",
             protein: "6.66 غرام",
@@ -141,7 +141,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "402",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "17.64 غرام",
             protein: "6.99 غرام",
@@ -161,7 +161,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "320",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "8.21 غرام",
             protein: "7.1 غرام",
@@ -181,7 +181,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "415",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "17.95 غرام",
             protein: "6.66 غرام",
@@ -205,7 +205,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "415",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "17.95 غرام",
             protein: "6.66 غرام",
@@ -228,7 +228,7 @@ export const homeContentAr: DeepPartial<HomePageContent> = {
           nutrition: {
             calories: {
               value: "279",
-              unit: "سعرة حرارية",
+              unit: "سعر حراري",
             },
             fat: "1.86 غرام",
             protein: "7.91 غرام",

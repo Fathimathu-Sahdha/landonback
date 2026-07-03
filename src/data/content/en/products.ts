@@ -50,6 +50,11 @@ export const productsContent: ProductsPageContent = {
     proteins: "Proteins",
     bannerAlt: "Product Detail Banner",
     notAvailable: "N/A",
+    variantLabels: {
+      Small: "Small",
+      Medium: "Medium",
+      Large: "Large",
+    },
   },
   ingredients: {
     categoryNotFound: "Category Not Found",
