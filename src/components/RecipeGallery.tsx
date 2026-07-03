@@ -30,7 +30,7 @@ interface Recipe {
 }
 
 const RecipeGallery = () => {
-  const { pageContent } = useLanguage();
+  const { pageContent, isRtl } = useLanguage();
   const content = pageContent.home.gallery;
   const allRecipes: Recipe[] = [
     { id: 1, image: gallery1, alt: content.imageAlts[0], size: { height: 'h-[8.4rem] md:h-[10.4rem]', width: 'w-[8.4rem] md:w-[10.4rem]' }, top: '0rem' },
@@ -85,7 +85,7 @@ const RecipeGallery = () => {
 
       {/* Column-based Infinite Horizontal Scrolling Gallery */}
       <div className="mb-12">
-        <div className="overflow-hidden relative w-full pt-8 pb-8">
+        <div className="overflow-hidden relative w-full pt-8 pb-8" dir={isRtl ? "ltr" : undefined}>
           <div className="flex gap-8 animate-infinite-scroll">
             {/* First set of columns */}
             <div className="flex gap-8 shrink-0">
