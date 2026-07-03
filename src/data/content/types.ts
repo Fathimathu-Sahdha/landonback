@@ -278,6 +278,7 @@ export interface ProductsPageContent {
     proteins: string;
     bannerAlt: string;
     notAvailable: string;
+    variantLabels: Record<string, string>;
   };
   ingredients: {
     categoryNotFound: string;
