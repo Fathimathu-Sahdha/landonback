@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutUs = () => {
-  const { pageContent } = useLanguage();
+  const { pageContent, isRtl } = useLanguage();
   const content = pageContent.aboutUs;
   const equipmentImages = [
     "/assets/equipments/equipment_1.webp",
@@ -214,7 +214,7 @@ const AboutUs = () => {
             </div>
 
             {/* Infinite Scrolling Retailers */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden" dir={isRtl ? "ltr" : undefined}>
               <div className="flex gap-8 w-max animate-scroll hover:pause-animation">
                 {[0, 1].map((setIndex) => (
                   <div key={setIndex} className="flex gap-8 shrink-0">
