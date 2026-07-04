@@ -5,6 +5,8 @@ import type { LayoutContent } from "../types";
 // See en/layout.ts for the English source of truth.
 export const layoutContentAr: DeepPartial<LayoutContent> = {
   header: {
+    logoAlt: "مخبز لندن - مشهد الجودة ١٩٨٦",
+    logoImage: "/assets/logo/logo_header_ar.png",
     nav: [
       { name: "الصفحة الرئيسية", href: "/" },
       { name: "منتجات", href: "/products" },

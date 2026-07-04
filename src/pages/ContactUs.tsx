@@ -6,8 +6,12 @@ import emailjs from "@emailjs/browser";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactUs = () => {
-  const { pageContent } = useLanguage();
+  const { pageContent, isRtl } = useLanguage();
   const content = pageContent.contactUs;
+  const fieldClassName =
+    "w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all" +
+    (isRtl ? " text-start placeholder:text-start" : "");
+  const textareaClassName = `${fieldClassName} resize-none`;
 
   // Form state
   const [formData, setFormData] = useState({
@@ -259,7 +263,8 @@ const ContactUs = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all"
+                    dir={isRtl ? "rtl" : undefined}
+                    className={fieldClassName}
                     placeholder={content.form.fields.name.placeholder}
                   />
                 </div>
@@ -276,7 +281,8 @@ const ContactUs = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all"
+                    dir={isRtl ? "rtl" : undefined}
+                    className={fieldClassName}
                     placeholder={content.form.fields.email.placeholder}
                   />
                 </div>
@@ -293,7 +299,8 @@ const ContactUs = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all"
+                    dir={isRtl ? "rtl" : undefined}
+                    className={fieldClassName}
                     placeholder={content.form.fields.phone.placeholder}
                   />
                 </div>
@@ -310,7 +317,8 @@ const ContactUs = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all resize-none"
+                    dir={isRtl ? "rtl" : undefined}
+                    className={textareaClassName}
                     placeholder={content.form.fields.message.placeholder}
                   ></textarea>
                 </div>

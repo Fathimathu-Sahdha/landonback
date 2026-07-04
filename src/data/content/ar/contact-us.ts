@@ -60,19 +60,19 @@ export const contactUsContentAr: DeepPartial<ContactUsContent> = {
       fields: {
         name: {
           label: "اﻻسم الكامل",
-          placeholder: "Enter your full name",
+          placeholder: "أدخل اسمك الكامل",
         },
         email: {
           label: "عنوان البريد الإلكتروني",
-          placeholder: "Enter your email address",
+          placeholder: "أدخل بريدك الإلكتروني",
         },
         phone: {
           label: "رقم التليفون",
-          placeholder: "Enter your phone number",
+          placeholder: "أدخل رقم هاتفك",
         },
         message: {
           label: "رسالة",
-          placeholder: "Tell us what you're thinking about...",
+          placeholder: "أخبرنا بما تفكر فيه…",
         },
       },
     },

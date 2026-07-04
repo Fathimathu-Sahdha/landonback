@@ -7,13 +7,6 @@ const AboutUs = () => {
   const content = pageContent.aboutUs;
   const equipmentImages = [
     "/assets/equipments/equipment_1.webp",
-    "/assets/equipments/equipment_2.webp",
-    "/assets/equipments/equipment_3.webp",
-    "/assets/equipments/equipment_4.webp",
-    "/assets/equipments/equipment_5.webp",
-  ];
-  const desktopEquipmentImages = [
-    "/assets/equipments/equipment_1.webp",
     "/assets/equipments/equipment_2.jpg",
     "/assets/equipments/equipment_3.png",
     "/assets/equipments/equipment_4.png",
@@ -183,7 +176,7 @@ const AboutUs = () => {
 
             {/* Web: Stepped Images Layout */}
             <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-6 lg:max-w-6xl lg:mx-auto lg:flex-nowrap">
-              {desktopEquipmentImages.map((image, index) => (
+              {equipmentImages.map((image, index) => (
                 <motion.div
                   key={image}
                   initial={{ opacity: 0, y: 30 }}

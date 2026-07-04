@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
 import AnimatedProductCard from "@/components/AnimatedProductCard";
 import { useNavigate } from "react-router-dom";
-import { getLocalizedProductCategories, getCategoryUrlName, productCategories } from "@/data/productData";
+import { getLocalizedProductCategories, getCategoryUrlName } from "@/data/productData";
+import { productsContent as englishProductsContent } from "@/data/content/en/products";
 import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -134,7 +135,7 @@ const Products = () => {
               <div
                 key={index}
                 className="flex flex-col items-center w-20 text-center cursor-pointer hover:scale-110 transition-transform"
-                onClick={() => navigate(`/products/browse/${getCategoryUrlName(category.categoryName)}`)}
+                onClick={() => navigate(`/products/browse/${getCategoryUrlName(englishProductsContent.listing.categoryIcons[index].categoryName)}`)}
               >
                 <div className={`w-16 h-16 ${category.color} rounded-full flex items-center justify-center text-white text-2xl mb-2`}>
                   {category.icon}
