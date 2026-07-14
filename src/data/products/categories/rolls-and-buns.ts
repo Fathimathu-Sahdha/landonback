@@ -371,7 +371,7 @@ export const rollsAndBunsCategory: ProductCategory =   {
         allergens: ["Gluten", "Milk Powder"],
       },
       arabic: {
-        name: "لقائف الزبدة البريطانية",
+        name: "لفائف الزبدة البريطانية",
         image: "/assets/rolls_n_buns/british_butter_roll.webp",
         image2: "/assets/rolls_n_buns_inner/british_butter_roll_wp.webp",
         size: "w-80 h-80",
@@ -447,7 +447,7 @@ export const rollsAndBunsCategory: ProductCategory =   {
         image2: "/assets/rolls_n_buns_inner/long_man_wp.webp",
         size: "w-80 h-80",
         bgcolor: "#D1C4E9",
-        description: "كعكة شعر طويلة للرجال ذات شكل فريد",
+        description: "لونج مان بان ذات الشكل الفريد",
         detailDescription: "اكتشف سحر كعكة لونغ مان بان المميزة، بتصميمها الطويل الفريد والمتعدد الاستخدامات. تتميز هذه الكعكة الناعمة والهشة بحلاوة خفيفة وقوام طري يجعلها مثالية للأطباق الحلوة والمالحة على حد سواء. حجمها الكبير يسمح بحشوها بأنواع مختلفة، من اللحوم الباردة الكلاسيكية إلى الصلصات الفاخرة.ستكون إضافة مميزة لأي مائدة، فهي تجمع بين المظهر الجذاب والمذاق الاستثنائي.",
         detailImage: "/assets/rolls_n_buns/detail-page-images/longman_bun_pd.webp",
         backgroundColor:

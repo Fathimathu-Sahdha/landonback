@@ -55,7 +55,7 @@ export const productsContentAr: DeepPartial<ProductsPageContent> = {
     notAvailable: "غير متاح",
     variantLabels: {
       Small: "صغير",
-      Medium: "واسطة",
+      Medium: "متوسط",
       Large: "كبير",
     },
   },
