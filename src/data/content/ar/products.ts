@@ -6,7 +6,7 @@ import type { ProductsPageContent } from "../types";
 export const productsContentAr: DeepPartial<ProductsPageContent> = {
     listing: {
     heroAlt: "مخبوزة لتغذية روحك",
-    heroImage: "/assets/images/product-banner_ar.png",
+    heroImage: "/assets/images/product-banner_ar.jpg",
     fancyTitle: "ماذا تشتهي اليوم ؟",
     fancyDescription:
       "تصفح مجموعتنا من المخبوزات المتنوعة التي تناسب أذواقكم. تم اختيار كل فئة بعناية فائقة لنقدم لكم أفضل تجربة.",
